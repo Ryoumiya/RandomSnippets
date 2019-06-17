@@ -1,0 +1,30 @@
+{
+"BoxUpdate":"17July2019",
+"BoxName":"Meter Alpha",
+"BoxPict":"https://i.imgur.com/DWQJfnl.png",
+"values":[
+{
+	"MeterNumber":"1",
+	"Voltage":"34.23",
+	"Ampere":"24",
+	"TotalWatt":"43"
+},
+{
+	"MeterNumber":"2",
+	"Voltage":"35.33",
+	"Ampere":"53",
+	"TotalWatt":"1441"
+},
+{
+	"MeterNumber":"3",
+	"Voltage":"5.342",
+	"Ampere":"12.3",
+	"TotalWatt":"51"
+},
+{
+	"MeterNumber":"345",
+	"Voltage":"5.3",
+	"Ampere":"154.43",
+	"TotalWatt":"521"
+}
+]
