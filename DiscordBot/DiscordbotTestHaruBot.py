@@ -28,11 +28,13 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         response = "hello world"
         await message.channel.send(response)
-
+    
+    # Reply with !hey
     if message.content.startswith('!hey'):
         msg = 'Hello {0.author.mention}'.format(message)
         await message.channel.send(msg)
-
+        
+    # Reply and file with !mg
     if message.content.startswith('!mg'):
         #msg = 'Hello {0.author.mention}'.format(message)
         await message.channel.send('Hello', file=discord.File('tophat.png'))
