@@ -590,11 +590,17 @@ def titleDownloader(id, directory, language, data = []):
             if os.path.isdir(Last_Downloaded_dir) : 
                 #there should be no possiblity that it the folder does not exist now right ?
 
+                New_path_root_list = os.path.split(Last_Downloaded_dir)
+                NewPath_root = New_path_root_list[0]
+                NewPath = os.path.join(NewPath_root, 'Processed')
+                
+                os.rename(Last_Downloaded_dir, NewPath)
+
                 #MaKo
-                Mako_Processor(Last_Downloaded_dir, chapter['language'], chapter_id)
+                Mako_Processor(NewPath, chapter['language'], chapter_id)
 
                 #delete folder
-                folder_deletor(Last_Downloaded_dir)
+                folder_deletor(NewPath)
 
     if ( downloaded ):
         # Create or Update json
